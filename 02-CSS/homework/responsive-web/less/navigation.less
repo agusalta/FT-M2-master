@@ -1,1 +1,49 @@
 // Código de Nav acá
+nav {
+    ul {
+        .flex-center();
+        padding: 1rem;
+    }
+    li {
+        display: inline-block;
+        font-size: medium;
+        padding: 6px 12px;
+
+        &::after {
+            transition: 5s;
+            content: '';
+            position: absolute;
+            border-bottom: 4px solid @ebony-clay;
+            top: 140%;
+            left: 50%;
+            right: 50%;
+            width: 0%;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+        }
+
+        &:hover {
+            &::after {
+                color: red;
+                font-size: large;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    .actual {
+        border-radius: 30px;
+    }
+};
+
+h1 {
+    .flex-center();
+    padding-top: 3rem;
+}
+

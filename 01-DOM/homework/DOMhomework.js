@@ -21,7 +21,7 @@ autor.innerHTML += ' agustin';
 
 function ToDo (description) {
   // Tu código acá:
-  this.description = description;
+  this.description = description; 
   this.complete = false;
 }
 
@@ -33,9 +33,7 @@ function ToDo (description) {
 // Tu código acá:
 
 ToDo.prototype.completeToDo = function () {
-  if (this.complete === false) {
-    this.complete = true;
-  }
+  this.complete = true; // !this.complete (tachado)
 }
 
 
